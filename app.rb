@@ -53,7 +53,7 @@ get("/dice/5/4") do
   erb(:five_four)
 end
 
-get("/dynamic/:zebra/:lime") do
+get("/dice/:zebra/:lime") do
   @num_dice = params.fetch("zebra").to_i
   @num_sides = params.fetch("lime").to_i
 
